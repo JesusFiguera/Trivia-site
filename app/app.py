@@ -3,10 +3,10 @@ from flask import Flask
 def create_app():
     app = Flask(__name__)
     app.config.from_mapping(
-        SECRET_KEY='sdfasj!"$"#%28394712',
-        DATABASE_HOST='localhost',
-        DATABASE_USER='root',
-        DATABASE_PASSWORD='1234',
+        SECRET_KEY='verydifficultstringidontknowhowtomake',
+        DATABASE_HOST='Sentinel.mysql.pythonanywhere-services.com',
+        DATABASE_USER='Sentinel',
+        DATABASE_PASSWORD='70242526e',
         DATABASE='trivia'
     )
 
@@ -21,3 +21,5 @@ def create_app():
     def prueba():
         return '<h1>Hola mundo</h1>'
     return app
+
+app = create_app()
