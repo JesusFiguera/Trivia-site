@@ -1,0 +1,72 @@
+body{
+  height: 100vh;
+  background: linear-gradient(to right,#1F1C2C,#3A6073);
+}
+
+form{
+  width: 25%;
+  background-color: red;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  border-radius: 16px;
+  background-color: transparent;
+  border: 2px solid  #3A6073;
+  text-align: center;
+  box-shadow: 2px 2px 4px 4px rgba(0,0,0,0.2);
+}
+
+#username-label{
+  color: white;
+  font-family: monospace;
+  font-size: 22px;
+  background-image: linear-gradient(to right,#8E76F7,#65808C);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#username-input{
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-color: #cccc;
+  background-color: transparent;
+  outline: 0;
+  color: white;
+  height: 2vh;
+  padding: 4px;
+}
+
+#submit{
+  border-radius: 8px;
+  font-size: 20px;
+  width: 50%;
+  background-color: transparent;
+  border: none;
+  color: white;
+  outline: none;
+  background-image: linear-gradient(#1F1C2C,#3A6073);
+}
+
+#submit:active{
+  background-image: linear-gradient(#1F1C2C,#65808C);
+}
+
+.table{
+  padding: 12px;
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+}
+table{
+  border: 2px solid #3A6073;
+  border-radius: 4px;
+  color: white;
+  text-align: center;
+  color: white;
+}
+
+th{
+  padding: 4px;
+}

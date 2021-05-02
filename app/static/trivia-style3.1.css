@@ -1,0 +1,83 @@
+body{
+    height: 100vh;
+    background: linear-gradient(to right,#1F1C2C,#3A6073);
+    color: white;
+    font-family: monospace;
+}
+
+
+
+#trivia_content{
+    margin-top:5%; 
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: content-box;
+    border: 2px solid #8E76F7;
+    box-shadow: 2px 4px 4px 8px rgba(0,0,0,0.3);
+    border-radius: 8px;
+    transition: 0.5s;
+}
+.box{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+.box h2{
+    text-align: center;
+    color: #8E76F7;
+    font-size: 20px;
+}
+label{
+    padding: 12px;
+    font-size: 22px;
+}
+li{
+    list-style-type: none;
+    margin: 30px;
+}
+
+.button-box{
+    padding: 10px;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    text-align: center;
+}
+
+#submit{
+    width: 40%;
+    height: 3.5vh;
+    font-family: monospace ;
+    font-size: 16px;
+    text-align: center;
+    border-radius:8px ;
+    border: none;
+    color: white;
+    outline: none;
+    background: linear-gradient(to right,#1F1C2C,#3A6073);
+    transition: 0.5s;
+}
+
+#submit:hover{
+    transition: 1s;
+    transform: scale(1.5,1.5);
+}
+
+#submit:active{
+    transform: scaleY(1);
+}
+
+label:hover{
+    transition: 0.5s;
+    background-color: #1F1C2C;
+    border-radius: 8px;
+}
+
+#segundos{
+    background-color: transparent;
+    border-color: transparent;
+    color: transparent;
+}

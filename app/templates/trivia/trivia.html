@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{category}}  </title>
+    <link rel="stylesheet" href="/static/trivia-style3.1.css"/>
+</head>
+<body onload="carga()">
+    <form method="POST" id="trivia_content" onsubmit="return enviar()" >
+        <input type="text" value="0" name="-1" id="segundos"/>
+        {% for i in range(4) %}
+        <div class="box">
+            <h2> {{ questions[i]["question"] }}</h2>
+            {% for j in range(3) %}
+                <ul>
+                    <li>
+                        <label>
+                            <input type="radio" name="{{i}}" value="{{ questions[i]['answers'][j] }}" required/>
+                            {{ questions[i]["answers_title"][j] }}
+                        </label>
+                    </li>
+                </ul>
+            {% endfor %}
+        </div>
+        {% endfor %}
+        <div class="button-box">
+            <input type="submit" value="Finish" id="submit"/>
+        </div>
+    </form>
+</body>
+<script>
+    function enviar(){
+        alert('Thanks for participating!')
+        boton = document.getElementById("submit")
+        boton.disabled = true
+    }
+</script>
+<script>
+    function carga(){
+        contador_s  = 0;
+        contador_m = 0;
+        s = document.getElementById("segundos");
+        m = document.getElementById("minutos");
+        window.setInterval(
+            function(){
+                if (contador_s  == 60){
+                    contador_s = 0;
+                    contador_m++;
+                    m.value = contador_m;
+
+                    if (contador_m == 60){
+                        contador_m=0;
+                    }
+                }
+                s.value = contador_s;
+                contador_s++;
+            }
+            ,1000);
+    }
+</script>
+</html>
